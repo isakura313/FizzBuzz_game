@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" >
     <title>Fizz Buzz</title>
+    <script src="code.js" defer></script>
   </head>
   <body>
     <div class="header">
@@ -21,23 +22,23 @@
         <p id="value_player_2">0</p>
       </div>
       <div class="grid-item logo_player_2"></div>
-      <div class="grid-item point_player_1">
-        <p>0</p>
+      <div class="grid-item">
+        <p class="point_player_1">0</p>
       </div>
       <div class="grid-item wrapper_btn_1">
-        <button class="btn" onclick="document.getElementById('value_player_1').innerHTML = getRndInteger(1, 30), fizzbuzz(i)">давай</button>
+        <button class="btn_1">давай</button>
       </div>
       <div class="grid-item wrapper_btn_2">
-        <button class="btn" onclick="document.getElementById('value_player_2').innerHTML = getRndInteger(1, 30)">давай</button>
+        <button class="btn_2">давай</button>
       </div>
-      <div class="grid-item point_player_2">
-        <p>0</p>
+      <div class="grid-item">
+        <p class="point_player_2">0</p>
       </div>
       <div class="grid-item lot">
         <p>Игра до 10 очков!</p>
-        <button class="lot_btn" onclick="document.querySelector('.lot_btn').innerHTML = getRnd()">жми и узнай кто начнет!</button>
+        <button class="lot_btn">жми и узнай кто начнет!</button>
       </div>
     </div>
-    <script src="code.js"></script>
+
   </body>
 </html>
